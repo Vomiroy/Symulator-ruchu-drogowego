@@ -1,6 +1,6 @@
 **US1** 
 
-Jako użytkownik chcę projektować szlaki dróg, aby mieć wgląd na ruch pojazdów
+Jako "użytkownik" chcę projektować szlaki dróg, aby mieć wgląd na ruch pojazdów
 
 **AC1**
 
@@ -10,7 +10,7 @@ Jako użytkownik chcę projektować szlaki dróg, aby mieć wgląd na ruch pojaz
 
 **US2**
 
-Jako użytkownik chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
+Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **AC2**
 
