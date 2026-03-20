@@ -1,0 +1,29 @@
+1. Komentarz do pytania
+2. Rodzaje odpowiedzi Zamknięte/Otwarte/wagi
+3. Gdzie to ma dzałać aplikacja/strona internetowa, Odpowiedź: System uczelniany
+
+4. Opcja roboczego zapisu
+	- zapis w odstępach czasu czy po wypełnieniu pytania
+5. Ponowne wypełnienie/edycja
+6. Pytania na osobnych oknach czy całość. Możliwość zmiany
+7. Wstawiane obrazków
+
+8. Możliwość anonimowej odpowiedzi
+9. Czy jest konkretny wymóg gdzie ma działać?
+10. Wymagania dotyczące wyglądu
+11. Opcja sprawdzenia odpwoiedzi i statystyki (publiczne/prywatne/Ustalenie kiedy będą widoczne)
+
+12. Pytania wielokrotnego wyboru, dźwiękowe
+13. Dźwięki przy wypełnieniu
+14. Podpowiedzi do pytań
+15. Eksportowanie ankiet, odpwoiedzi do różnych typów plików
+
+16. Limity czasowe, Odpwoiedź: tak
+17. Przedziały czasowe działania ankiet/ automatyczne / manualne
+18. Połączenie z E-mailem/ informacja na E-mail
+19. Szyfrowanie danych
+
+20. Gotowe wzorce formularzy, tworzenie własnych
+21. Formatowanie tekstu
+22. Zależność od oprogramowania (komputery/telefony)
+23. Sposoby wyświetlania odpowiedzi
