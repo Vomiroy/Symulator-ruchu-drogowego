@@ -9,8 +9,6 @@
 - Znaki drogowe i sygnalizacja świtlna
 - Reguły/Zasady ruchu
 - Zdarzenia na drodze
-- Zmiany pogodowe
-- 
 ## Relacje
 - Odcinek drogi >-< Węzeł
 - Zasady >- Odcinek drogi
