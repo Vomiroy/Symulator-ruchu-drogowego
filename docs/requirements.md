@@ -20,7 +20,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US3**
 
-...
+Jako "użytkownik" chcę mieć możliwość zapisu utworzonej mapy, aby nie tworzyć jej od nowa
 
 **AC3**
 
@@ -29,8 +29,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 ------------------------------------------------------------------------------------------------
 
 **US4**
-
-...
+Jako "użytkownik" chcę mieć możliwość udostępnienia swojej mapy w bazie danych, aby inni użytkownicy mogli ją wykorzystać
 
 **AC4**
 
@@ -40,7 +39,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US5**
 
-...
+Jako "użytkownik" chcę mieć możliwość pobrania mapy z bazy danych udostępnionych przez innych użytkowników, aby móc je wykorzystać
 
 **AC5**
 
@@ -50,7 +49,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US6**
 
-...
+Jako "użytkownik" chcę mieć dostęp do gotowych obiektów, aby nie było potrzeby tworzenia ich od podstaw
 
 **AC6**
 
@@ -60,7 +59,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US7**
 
-...
+Jako "użytkownik" chcę importować do programu własne elementy, aby korzystać z obiektów, których nie oferuje sam program
 
 **AC7**
 
@@ -70,7 +69,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US8**
 
-...
+Jako "użytkownik" chcę ustawić odpowiednie zasady ruchu dla danego odcinka drogi, aby pojazdy dostosowywały się do nich
 
 **AC8**
 
@@ -80,7 +79,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US9**
 
-...
+Jako "użytkownik" chcę umieszczać np. znaki drogowe/sygnalizacje świetlne z ustalonymi zasadami, aby pojazdy poruszały się odpowiednio
 
 **AC9**
 
@@ -90,7 +89,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US10**
 
-...
+Jako "użytkownik" chcę symulować ruch pieszych, aby testować zachowanie pojazdów
 
 **AC10**
 
@@ -100,7 +99,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US11**
 
-...
+Jako "użytkownik" chcę mieć możliwość ustalania prędkości z jaką mogą poruszać się pojazdy, aby analizować ich zachowanie na drodze
 
 **AC11**
 
@@ -110,7 +109,7 @@ Jako "użytkownik" chcę symulować ruch pojazdów, aby ocenić wykonanie dróg
 
 **US12**
 
-...
+Jako "użytkownik" chcę by program odwzorowywał rzeczywistą fizykę pojazdów, aby analizować ich ruch przy ustalonych zasadach i wykrywać możliwe kolizje między pojazdami
 
 **AC12**
 
