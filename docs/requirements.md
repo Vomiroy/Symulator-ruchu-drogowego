@@ -123,7 +123,10 @@ Jako "użytkownik" chcę wybrać odpowiedni typ drogi aby odzwierciedlić jej rz
 
 **AC13**
 
-------------------------------------------------------------------------------------------------
+Użytkownik ma do dyspozycji menu/narzędzie z listą predefiniowanych typów dróg (np. prosta, zakręt, skrzyżowanie, rondo).
+Po wybraniu typu drogi i umieszczeniu jej na mapie, jej wizualizacja na ekranie odpowiada wybranemu kształtowi.
+System pozwala na łączenie różnych typów dróg ze sobą, weryfikując poprawność połączenia (np. zapobiega nakładaniu się na siebie niekompatybilnych węzłów).
+Użytkownik może zdefiniować podstawowe parametry kształtu (np. promień zakrętu, liczba pasów, teksture).
 
 **US14**
 
@@ -131,7 +134,10 @@ Jako "użytkownik" chcę ustawić dla określonego odcinku drogi natężenie ruc
 
 **AC14**
 
-------------------------------------------------------------------------------------------------
+Po kliknięciu na wygenerowany odcinek drogi, pojawia się panel konfiguracji natężenia ruchu.
+Użytkownik może dodać wiele przedziałów czasowych w formacie "Od HH:MM do HH:MM".
+Dla każdego przedziału użytkownik może zdefiniować wartość natężenia (np. liczba pojazdów na godzinę).
+Podczas działania symulacji, system automatycznie zwiększa lub zmniejsza liczbę generowanych pojazdów na danym odcinku, zgodnie z aktualnym czasem symulacji i wprowadzonym harmonogramem.
 
 **US15**
 
@@ -152,7 +158,7 @@ ruchu jednego z lub wiecej typu lokomocji (samochody, tramwaje, pieszy, rowery, 
 
 **US17**
 
-Jako "użytkownik" chcę utworzyć wyznaczyć obszar terenu do zapisu, aby w przyszłości mięc możliwość ich wczytania. 
+Jako "użytkownik" chcę wyznaczyć obszar terenu do zapisu, aby w przyszłości mięc możliwość ich wczytania. 
 
 **AC17**
 
@@ -168,41 +174,49 @@ Jako "użytkownik" chcę utworzyć scenariusz z możliwością zapisu parametró
 
 **US19**
 
+Jako "użytkownik" chcę konfigurować cykle sygnalizacji świetlnej na wybranych skrzyżowaniach, aby analizować ich wpływ na przepustowość ruchu.
 
 **AC19**
 
-------------------------------------------------------------------------------------------------
+
 
 **US20**
 
+Jako "użytkownik" chcę zdefiniować trasy, rozkłady jazdy oraz przystanki dla transportu publicznego (np. autobusów i tramwajów), 
+aby sprawdzić, jak ich obecność wpływa na płynność ruchu pozostałych pojazdów.
 
 **AC20**
 
-------------------------------------------------------------------------------------------------
+
 
 **US21**
+Jako "użytkownik" chcę mieć możliwość stworzenia zdarzenia na drodze np. wypadku lub robot drowgowych, w określonym miejscu lub odcinku drogi,
+aby zobaczyć ich wpływ na reguralny ruch. 
 
 
 **AC21**
 
-------------------------------------------------------------------------------------------------
 
 **US22**
 
+Jako "użytkownik" chcę modyfikować globalne warunki pogodowe np. deszcz, śnieg, mgła,
+aby zaobserwować, jak zmniejszona prędkość i wydłużona droga hamowania wpływają na ogólny czas podróży i tworzenie się korków.
 
 **AC22**
 
-------------------------------------------------------------------------------------------------
 
 **US23**
 
+Jako "użytkownik" chcę wprowadzić do ruchu pojazdy specjalny typ pojazdów takich jak karetki i wozy strażackie, 
+aby zweryfikować, czy algorytmy zachowań innych uczestników ruchu poprawnie reagują na konieczność ustąpienia pierwszeństwa.
 
 **AC23**
 
-------------------------------------------------------------------------------------------------
+
 
 **US24**
 
+Jako "użytkownik" chcę zdefiniować przejścia dla pieszych, aby zobaczyć wzajemną interakcje ruchu ludzi oraz pojazdów w celu znalezienia optymalnej konfiguracji.
 
 **AC24**
 
