@@ -11,7 +11,7 @@
           <mxGeometry height="40" width="100" x="70" y="270" as="geometry" />
         </mxCell>
         <mxCell id="hXZus79lLZIJ3kafm3WL-3" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="Drogi (kategoria)" vertex="1">
-          <mxGeometry height="40" width="100" x="-160" y="270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-200" y="270" as="geometry" />
         </mxCell>
         <mxCell id="hXZus79lLZIJ3kafm3WL-4" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="Trasy" vertex="1">
           <mxGeometry height="40" width="114" x="460" y="60" as="geometry" />
@@ -84,6 +84,9 @@
         </mxCell>
         <mxCell id="1s_SAfb_5N3zRVA8lNIW-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Zbudowane z&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="90" x="210" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="1s_SAfb_5N3zRVA8lNIW-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Typu" vertex="1">
+          <mxGeometry height="30" width="60" x="-10" y="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
