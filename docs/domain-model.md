@@ -23,7 +23,7 @@
 
 ```mermaid
 graph TD;
-    Odcinek drogi-->Węzły;
+    [Odcinek drogi]-->Węzły;
     A-->C;
     B-->D;
     C-->D;
