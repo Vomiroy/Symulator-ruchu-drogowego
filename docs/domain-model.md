@@ -25,5 +25,5 @@
 ```mermaid
 graph TD
   [Węzły]
-  [Odcinek drogi]  -- zbudowany z --> [Węzły]
-  
+  [Odcinek drogi]  --> [Węzły]
+```
