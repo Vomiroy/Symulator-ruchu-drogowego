@@ -21,20 +21,18 @@
 * **Trasy 🡢 Zdarzenie na drodze** (0..1:N) Na *trasie* występuje wiele *zdarzeń na drodze*
 ## Uwagi
 
-
 ```mermaid
 erDiagram
-    ODCINEK_DROGI }|--|{ WEZEL : connects
+    ODCINEK_DROGI ||--o{ WEZEL : "zbudowany_z"
+    ODCINEK_DROGI ||--o{ ZASADY : "posiada"
+    ODCINEK_DROGI ||--|| TYP_DROGI : "jest_typu"
 
-    ZASADY ||--o{ ODCINEK_DROGI : applies_to
-    ZASADY ||--|| ZNAKI_DROGOWE : defines
+    ZNAKI_DROGOWE ||--|| ZASADY : "dyktuje"
 
-    ODCINEK_DROGI }o--|| DROGI_KATEGORIA : categorized_as
+    TRASY ||--o{ WEZEL : "przechodzi_przez"
 
-    TRASY ||--o{ WEZLY : includes
-    POJAZDY ||--o{ TRASY : uses
+    POJAZDY ||--|| TRASY : "jedzie"
+    POJAZDY ||--|| TYP_POJAZDU : "jest_typu"
 
-    POJAZD_KATEGORIA ||--o{ POJAZDY : groups
-
-    ZDARZENIE_NA_DRODZE }o--|| TRASY : occurs_on
+    TRASY o|--o{ ZDARZENIE_NA_DRODZE : "wystepuje"
 ```
