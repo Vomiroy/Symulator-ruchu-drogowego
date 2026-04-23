@@ -19,11 +19,12 @@
 - Pojazd (kategoria) -- Pojazdy
 - Zdarzenie na drodze >- Trasy
 ## Uwagi
--
 
 
 ```mermaid
-graph TD
-  [Węzły]
-  [Odcinek drogi]  --> [Węzły]
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
