@@ -22,9 +22,18 @@
 
 
 ```mermaid
-graph TD;
-    "Odcinek drogi"-->Węzły;
-    "Odcinek drogi"-->C;
-    Węzły-->D;
-    C-->D;
+erDiagram
+    ODCINEK_DROGI }|--|{ WEZEL : connects
+
+    ZASADY ||--o{ ODCINEK_DROGI : applies_to
+    ZASADY ||--|| ZNAKI_DROGOWE : defines
+
+    ODCINEK_DROGI }o--|| DROGI_KATEGORIA : categorized_as
+
+    TRASY ||--o{ WEZLY : includes
+    POJAZDY ||--o{ TRASY : uses
+
+    POJAZD_KATEGORIA ||--o{ POJAZDY : groups
+
+    ZDARZENIE_NA_DRODZE }o--|| TRASY : occurs_on
 ```
