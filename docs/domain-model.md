@@ -11,10 +11,10 @@
 - Zdarzenia na drodze
 
 ## Relacje
-* **Odcinek drogi 🡢 Węzeł** (1:N)
-* **Odcinek drogi 🡢 Zasady** (1:N)
-* **Odcinek drogi 🡢 Typ Drogi** (1:1)
-* **Znaki drogowe 🡢 Zasady** (1:1)
+* **Odcinek drogi 🡢 Węzeł** (1:N) *Odcinek drogi* jest zbudowany z *węzłów* 
+* **Odcinek drogi 🡢 Zasady** (1:N) *Odcinek drogi* posiada *zasady*
+* **Odcinek drogi 🡢 Typ Drogi** (1:1) *Odcinek drogi* jest *typu*
+* **Znaki drogowe 🡢 Zasady** (1:1) *Znak* dyktuje *zasady*
 * **Trasy 🡢 Węzły** (1:N) *Trasa* przechodzi przez *Węzły*
 * **Pojazdy 🡢 Trasy** (1:1) *Pojazd* jedzie *trasą*
 * **Pojazdy 🡢 Typ pojazdu** (1:1) *Pojazd* jest *typu*
