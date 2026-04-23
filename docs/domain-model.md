@@ -20,3 +20,16 @@
 - Zdarzenie na drodze >- Trasy
 ## Uwagi
 -
+
+
+'''mermaid
+graph TD
+  Węzły
+  Odcinek drogi  -- zbudowany z --> Węzły
+  Drogi (kategoria)
+  Trasy
+  Pojazdy
+  Pojazd (kategoria)
+  Znaki drogowe i sygnalizacja świtlna
+  Reguły/Zasady ruchu
+  Zdarzenia na drodze
