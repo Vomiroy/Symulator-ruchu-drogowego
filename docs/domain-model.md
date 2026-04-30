@@ -23,11 +23,13 @@
 
 ```mermaid
 erDiagram
+
+    ZNAKI_DROGOWE ||--|| ZASADY : "dyktuje"
     ODCINEK_DROGI ||--o{ WEZEL : "zbudowany_z"
     ODCINEK_DROGI ||--o{ ZASADY : "posiada"
     ODCINEK_DROGI ||--|| TYP_DROGI : "jest_typu"
 
-    ZNAKI_DROGOWE ||--|| ZASADY : "dyktuje"
+    
 
     TRASY ||--o{ WEZEL : "przechodzi_przez"
 
