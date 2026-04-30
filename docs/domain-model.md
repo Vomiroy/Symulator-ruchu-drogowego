@@ -25,11 +25,10 @@
 erDiagram
 
     ZNAKI_DROGOWE ||--|| ZASADY : "dyktuje"
-    ODCINEK_DROGI ||--o{ WEZEL : "zbudowany_z"
-    ODCINEK_DROGI ||--o{ ZASADY : "posiada"
-    ODCINEK_DROGI ||--|| TYP_DROGI : "jest_typu"
 
-    
+    ODCINEK_DROGI ||--o{ ZASADY : "posiada"
+    ODCINEK_DROGI ||--o{ WEZEL : "zbudowany_z"
+    ODCINEK_DROGI ||--|| TYP_DROGI : "jest_typu"
 
     TRASY ||--o{ WEZEL : "przechodzi_przez"
 
