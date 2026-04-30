@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[User visits website] --> B{Is user logged in?}
 
@@ -20,3 +21,4 @@ flowchart TD
 
     J --> H
     K --> A
+```
