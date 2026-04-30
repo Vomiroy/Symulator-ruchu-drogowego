@@ -1,7 +1,9 @@
 ```mermaid
 flowchart TD
-    A((Start)) --> B[Wejście do menu]
-    B[Wejście do menu] --> C[Wybór narzędzia]
+    A((Start
+Uruchomienie programu)) --> B[Wybranie typu drogi]
+    B --> C[Wybranie początku drogi przez kliknięcie punktu na mapie]
+    C --> D[Wybranie końca drogi przez kliknięcie punktu na mapie]
 ```
 flowchart TD
     A[User visits website] --> B{Is user logged in?}
