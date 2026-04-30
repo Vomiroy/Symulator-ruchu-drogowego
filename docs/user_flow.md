@@ -1,3 +1,9 @@
+Uworzenie odcinka drogi
+połącząnego z istniejeącą drogą lub nie
+problem wielu pasów 
+
+
+
 ```mermaid
 flowchart TD
     A((Start
