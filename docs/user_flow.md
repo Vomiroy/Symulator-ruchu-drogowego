@@ -1,9 +1,13 @@
 ```mermaid
 flowchart TD
-    A((Start
-Uruchomienie programu)) --> B[Wybranie typu drogi]
+    A(Start
+Uruchomienie programu) --> B[Wybranie typu drogi]
     B --> C[Wybranie początku drogi przez kliknięcie punktu na mapie]
     C --> D[Wybranie końca drogi przez kliknięcie punktu na mapie]
+    D --> E{Czy odcinek drogi odzwiercielda rzeczywisty kształt?}
+    E -- Tak --> F(Koniec)
+    E -- Nie --> G[Usunięcie utworzonego odcinka drogi]
+    G --> B  
 ```
 flowchart TD
     A[User visits website] --> B{Is user logged in?}
