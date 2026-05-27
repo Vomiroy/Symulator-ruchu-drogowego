@@ -124,7 +124,9 @@ Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby 
 * Pojazdy przypisane do komunikacji publicznej zatrzymują się na przystankach na określony czas (np. czas wymiany pasażerów), po czym wznawiają jazdę.
 
 
-**US13** Jako użytkownik chcę stworzyć przystanek  i przypisać go do wielu linii komunikacji publicznej, aby odzwierciedlić realne współdzielenie infrastruktury.
+**US13**
+
+Jako użytkownik chcę stworzyć przystanek  i przypisać go do wielu linii komunikacji publicznej, aby odzwierciedlić realne współdzielenie infrastruktury.
 
 **AC13**
 
@@ -133,7 +135,9 @@ Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby 
 * Ten sam przystanek może być współdzielony i obsługiwany przez wiele różnych linii komunikacji publicznej.
 * Pojazdy linii publicznej zatrzymują się na przystankach, a system generuje opóźnienia (np. wynikające z ruchu drogowego lub oczekiwania na zwolnienie współdzielonego przystanku przez inny pojazd).
 
-**US14** Jako użytkownik chcę dodać element blokady drogi, aby tymczasowo wyłączyć wybrany odcinek lub węzeł z ruchu.
+**US14**
+
+Jako użytkownik chcę dodać element blokady drogi, aby tymczasowo wyłączyć wybrany odcinek lub węzeł z ruchu.
 
 **AC14**
 
@@ -142,7 +146,9 @@ Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby 
 * Pojazdy generowane w symulacji dynamicznie reagują na blokadę – jeśli to możliwe, zmieniają trasę, aby ją ominąć, a jeśli nie mają alternatywy, zatrzymują się przed zablokowanym obszarem.
 * Blokada jest wyświetlana na mapie w czytelny sposób za pomocą dedykowanej grafiki.
 
-**US15** Jako użytkownik chcę wyznaczyć obszar ze specjalnymi warunkami środowiskowymi (np. lód, zalanie drogi), aby dynamicznie wpływać na zachowanie różnych typów pojazdów, parametry fizyczne tras oraz wywoływać zdarzenia awaryjne.
+**US15**
+
+Jako użytkownik chcę wyznaczyć obszar ze specjalnymi warunkami środowiskowymi (np. lód, zalanie drogi), aby dynamicznie wpływać na zachowanie różnych typów pojazdów, parametry fizyczne tras oraz wywoływać zdarzenia awaryjne.
 
 **AC15**
 
@@ -152,7 +158,9 @@ Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby 
 * Pojazdy mogą podjąć próbę przejazdu, ale ich prędkość spada.
 * Wyznaczony obszar jest wyróżniony na mapie odpowiednią nakładką graficzną (np. błękitną dla lodu, jasnoniebieską dla zalania).
 
-**US17** Jako użytkownik chcę zmieniać globalną pogodę, aby wpłynąć na fizykę jazdy, widoczność i zachowanie pojazdów w całej symulacji.
+**US17** 
+
+Jako użytkownik chcę zmieniać globalną pogodę, aby wpłynąć na fizykę jazdy, widoczność i zachowanie pojazdów w całej symulacji.
 
 **AC16**
 
@@ -162,3 +170,112 @@ Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby 
 * Trudne warunki generują losowe opóźnienia, wpływając m.in. na punktualność autobusów.
 * Warunki lokalne mają wyższy priorytet i nadpisują pogodę globalną w danym miejscu.
 
+**US17** 
+
+Jako użytkownik chcę konfigurować intensywność ruchu dla różnych przedziałów czasowych bezpośrednio z poziomu węzła, aby zasymulować zmienne w czasie obciążenie sieci przez pojazdy i pieszych.
+
+**AC17**
+
+* Kliknięcie na węzeł otwiera dedykowane menu kontekstowe dla tego konkretnego punktu.
+* W menu kontekstowym użytkownik może zdefiniować listę różnych przedziałów czasowych (np. od 15:30 do 16:09 ).
+* Dla każdego zdefiniowanego przedziału czasowego użytkownik może za pomocą suwaków lub pól numerycznych określić osobną intensywność pojawiania się np. pojazdów lub pieszych rozpoczynających ruch z tego węzła.
+* W trakcie trwania symulacji system automatycznie śledzi upływający czas i w momencie przekroczenia granicy przedziału dynamicznie zmienia tempo automatycznego generowania obiektów z danego węzła.
+* Harmonogram intensywności w menu kontekstowym można modyfikować także w czasie rzeczywistym podczas działającej symulacji, co natychmiast wpływa na bieżący strumień ruchu.
+
+**US18**
+
+Jako użytkownik chcę, aby system automatycznie i dynamicznie wyznaczał optymalne trasy dla wszystkich typów uczestników ruchu (pojazdów, pieszych, rowerów, tramwajów), wykorzystując algorytmy wyszukiwania ścieżek.
+
+**AC18**
+
+* System automatycznie kalkuluje trasę od punktu początkowego (Źródła) do docelowego (Ujścia) przy użyciu algorytmu grafowego.
+* Rozróżnienie sieci poruszania się: Algorytm ściśle respektuje infrastrukturę dedykowaną dla danej klasy agenta.
+* Dynamiczne przeliczanie tras: Agenci reagują na bieżące zmiany na mapie. Jeśli na ich trasie pojawi się nagła blokada lub strefa niedostępna z powodu zalania, pojazdy w najbliższym węźle automatycznie przeliczają alternatywną ścieżkę.
+* Wagi odcinków: Koszt przejścia danego odcinka drogi w algorytmie nie wynika tylko z jego fizycznej długości, ale uwzględnia również:
+    * Aktualne ograniczenia prędkości,
+    * Obecność sygnalizacji świetlnej,
+    * Narastające natężenie ruchu.
+ 
+**US19**
+
+Jako użytkownik chcę widzieć zagęszczenie ruchu w postaci kolorowego gradientu, aby szybko i intuicyjnie zlokalizować korki na mapie.
+
+**AC19**
+
+* System nakłada na drogi dynamiczną warstwę wizualną w postaci płynnego gradientu kolorów (od zielonego, przez żółty, aż do intensywnej czerwieni).
+* Kolor odcinka zmienia się automatycznie w czasie rzeczywistym na podstawie bieżącej płynności i liczby stojących pojazdów.
+* Czysty zielony oznacza całkowity brak zatorów, a ciemnoczerwony – pełny paraliż drogi (korek).
+* Widok gradientu natężenia ruchu można w każdej chwili włączyć lub wyłączyć jednym kliknięciem w interfejsie.
+
+**US20** 
+
+Jako użytkownik chcę kontrolować stan oraz prędkość działania całej symulacji, aby móc swobodnie uruchamiać, zatrzymywać i przyspieszać ruch na mapie.
+
+**AC20**
+
+* Interfejs zawiera główny panel kontrolny z przyciskami: **Start/Odtwarzaj**, **Pauza** oraz **Reset**.
+* Przycisk **Pauza** natychmiast zamraża ruch wszystkich pojazdów, pieszych, sygnalizacji oraz licznik czasu, zachowując pełną interaktywność UI (możliwość klikania w węzły).
+* Użytkownik może płynnie zmieniać **prędkość symulacji** za pomocą suwaka lub poprzez wpisanie wartości w pole po kliknieciu na mnożnik, co przyspiesza fizykę ruchu i logikę agentów.
+* Opcja **Reset** natychmiast usuwa z mapy wszystkie dynamicznie wygenerowane obiekty i przywraca zegar symulacji do startowej wartości.
+* Na ekranie głównym wyświetlany jest aktualny, ciągły czas trwania symulacji.
+* Użytkownik ma możliwość wpisania czasu startowego symulacji gdy jest ona zatrzymana.
+
+**US21** 
+
+Jako użytkownik chcę zapisać zaznaczony schemat infrastruktury, aby móc wielokrotnie wykorzystywać ten sam układ sieci do różnych scenariuszy ruchu.
+
+**AC21**
+
+* Opcja **„Zapisz schemat”** eksportuje do pliku wyłącznie statyczną strukturę mapy: siatkę dróg, węzły, znaki, reguły oraz cykle sygnalizacji świetlnej.
+* Plik **nie zawiera** informacji o aktualnie poruszających się pojazdach, pieszych ani stanie licznika symulacji.
+* Dane są zapisywane w lekkim, ustrukturyzowanym formacie (np. JSON).
+* Użytkownik może wybrać folder docelowy oraz nadać plikowi własną nazwę poprzez standardowe okno systemowe.
+
+
+**US21** 
+
+Jako użytkownik chcę zaznaczyć ramką określone elementy infrastruktury, aby zapisać je jako schemat (blueprint) do późniejszego skopiowania lub eksportu.
+
+**AC21**
+
+* Użytkownik może aktywować narzędzie selekcji (np. przeciągając prostokątną ramkę) i wybrać fragment infrastruktury (węzły, odcinki, znaki, sygnalizację).
+* System podświetla wybrane elementy i pozwala zapisać ten konkretny fragment jako osobny plik schematu (np. "Rondo_turbinowe.json").
+* Zapisywane są wyłącznie statyczne elementy i ich wzajemna logika, dynamiczne pojazdy wewnątrz ramki są ignorowane.
+* Zapisany w ten sposób schemat trafia na listę podręcznych szablonów użytkownika, gotowych do ponownego "wklejenia" w dowolnym miejscu na makiecie.
+
+**US22** 
+
+Jako użytkownik chcę wybrać zapisany schemat (blueprint) i go wstawić, aby szybko replikować złożone układy skrzyżowań i dróg.
+
+**AC22**
+
+* Użytkownik może wybrać zapisany wcześniej schemat z listy podręcznej lub wczytać go z pliku JSON.
+* Po wyborze schematu, pod kursorem myszy pojawia się półprzezroczysty podgląd wklejanej infrastruktury.
+* Użytkownik może obracać podgląd schematu i sostosować jego pozycję przed jego ostatecznym umieszczeniem na mapie.
+* Kliknięcie przycisku potwierdzenia lub klawisza "enter" myszy potwierdza, automatycznie łącząc drogi ze schematu z istniejącą już siecią, jeśli ich punkty stykowe się pokrywają.
+* Wklejona infrastruktura zachowuje całą swoją oryginalną konfigurację (przypisane znaki, reguły pierwszeństwa oraz cykle sygnalizacji świetlnej).
+
+**US23** 
+
+Jako użytkownik chcę zapisać pełny stan symulacji do pliku, aby móc później wznowić pracę dokładnie w tym samym momencie, z zachowaniem wszystkich poruszających się pojazdów.
+
+**AC23**
+
+* Opcja **Zapisz** eksportuje do pliku (JSON lub dedykowany format) kompletny stan całej makiety.
+* Zapis obejmuje:
+  * Całą infrastrukturę drogową, znaki i reguły.
+  * Aktualną pozycję, prędkość, przypisaną trasę i typ każdego aktywnego pojazdu, pieszego czy pociągu na mapie.
+  * Bieżący czas symulacji, stan sygnalizacji świetlnej oraz aktywne blokady.
+  * Ustawienia pogody: lokalne i globalne
+* Użytkownik zapisuje plik poprzez standardowe okno systemowe, wybierając dowolną nazwę i lokalizację na dysku.
+
+**US24**
+
+Jako użytkownik chcę wczytać pełny stan symulacji z pliku, aby wznowić zapisaną wcześniej sesję wraz ze wszystkimi poruszającymi się obiektami.
+
+**AC24**
+
+* Użytkownik wybiera plik zapisu z poziomu okna systemowego.
+* Wczytanie pliku całkowicie zastępuje bieżący stan makiety, odtwarzając pełną infrastrukturę oraz dokładne pozycje, prędkości i trasy wszystkich pojazdów, pieszych i pociągów.
+* System przywraca dokładny czas zegara symulacji oraz aktualne fazy sygnalizacji świetlnej z momentu zapisu.
+* Po pomyślnym wczytaniu symulacja domyślnie uruchamia się w trybie **Pauzy**, pozwalając użytkownikowi na rozejrzenie się po mapie przed wznowieniem ruchu.
