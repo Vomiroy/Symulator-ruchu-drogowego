@@ -1,29 +1,34 @@
 ```mermaid
 flowchart TD
-    A[Otwarcie programu i załadowanie mapy z infrastrukturą] --> B[Kliknięcie przycisku 'Dodaj linię komunikacyjną']
+    A[Otwarcie programu] --> B{Wybór źródła mapy}
     
-    B --> C[Otwarcie menu konfiguracji linii]
-    C --> D[Wpisanie nazwy/numeru]
-    D --> E[Wybór gotowej trasy z listy przypisanej do drogi]
+    B -- Wczytaj plik zapisu --> C[Załadowanie infrastruktury dróg i węzłów]
+    B -- Wstaw schemat --> C
     
-    E --> F{Czy trasa zawiera przystanki?}
-    F -- Nie --> G[Komunikat: Wybrana trasa nie posiada przystanków]
-    G --> E
+    C --> D[Kliknięcie przycisku 'Dodaj linię komunikacyjną']
     
-    F -- Tak --> H[Automatyczne wygenerowanie listy przystanków w menu]
-    H --> I[Rozpoczęcie edycji godzin dla pierwszej instancji kursu]
+    D --> E[Otwarcie menu konfiguracji linii]
+    E --> F[Wpisanie nazwy/numeru]
+    F --> G[Wybór gotowej trasy z listy przypisanej do drogi]
     
-    I --> J{Edycja czasu na pierwszym przystanku?}
+    G --> H{Czy trasa zawiera przystanki?}
+    H -- Nie --> I[Komunikat: Wybrana trasa nie posiada przystanków]
+    I --> G
     
-    J -- Tak --> K[System automatycznie przesuwa czasy kolejnych przystanków o zadaną różnicę]
-    J -- Nie / Edycja innych przystanków --> L[Ręczne wpisanie lub dostosowanie godzin]
+    H -- Tak --> J[Automatyczne wygenerowanie listy przystanków w menu]
+    J --> K[Rozpoczęcie edycji godzin dla pierwszej instancji kursu]
     
-    K --> M{Czy dodać kolejny kurs/instancję tej linii?}
-    L --> M
+    K --> L{Edycja czasu na pierwszym przystanku?}
     
-    M -- Tak --> N[Kliknięcie 'Dodaj kolejny kurs']
-    N --> O[System tworzy nową instancję i automatycznie kopiuje czasy z poprzedniej]
-    O --> J
+    L -- Tak --> M[System automatycznie przesuwa czasy kolejnych przystanków o zadaną różnicę]
+    L -- Nie / Edycja innych przystanków --> N[Ręczne wpisanie lub dostosowanie godzin]
     
-    M -- Nie --> P[Zapisanie i aktywacja pełnego rozkładu dla linii komunikacyjnej]
+    M --> O{Czy dodać kolejny kurs/instancję tej linii?}
+    N --> O
+    
+    O -- Tak --> P[Kliknięcie 'Dodaj kolejny kurs']
+    P --> Q[System tworzy nową instancję i automatycznie kopiuje czasy z poprzedniej]
+    Q --> L
+    
+    O -- Nie --> R[Zapisanie i aktywacja pełnego rozkładu dla linii komunikacyjnej]
 ```
