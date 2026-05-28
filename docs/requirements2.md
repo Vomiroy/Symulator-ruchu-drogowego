@@ -109,7 +109,7 @@ Jako użytkownik chcę stworzyć nową trasę z sekwencji połączonych węzłó
 
 **AC11**
 
-* Użytkownik może wyznaczyć trasę, wskazując kolejno połączone ze sobą węzły lub odcinki dróg.
+* Użytkownik może wyznaczyć trasę, wskazując kolejno połączone ze sobą węzły lub przystanki.
 * System waliduje ciągłość i kierunkowość połączeń, uniemożliwiając stworzenie nieprzejezdnej trasy (np. jazdy pod prąd).
 * Nowo utworzona trasa zostaje zapisana w systemie i jest gotowa do przypisania pojazdom.
 
