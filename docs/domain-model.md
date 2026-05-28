@@ -116,6 +116,6 @@ erDiagram
 
     %% Relacje Komunikacji Miejskiej
     LINIA_KOMUNIKACYJNA }|--|{ PRZYSTANEK : "zatrzymuje_sie_na"
-    LINIA_KOMUNIKACYJNA ||--|| TRASY : "kursuje_po"
+    LINIA_KOMUNIKACYJNA |o--|| TRASY : "kursuje_po"
     POJAZD }o--o| LINIA_KOMUNIKACYJNA : "obsluguje"
 ```
