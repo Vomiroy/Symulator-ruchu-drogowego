@@ -18,7 +18,8 @@
 * **Odcinek drogi 🡢 Zdarzenie na drodze** (1:N) Na *odcinku drogi* może wystąpić wiele *zdarzeń*
 * **Odcinek drogi 🡢 Przystanek** (1:N) Na jednym *odcinku drogi* może znajdować się wiele *przystanków*
 * **Znaki drogowe 🡢 Zasady** (N:1) *Znak* dyktuje *zasady*
-* **Trasy 🡢 Węzły** (M:N) *Trasa* przechodzi przez *Węzły*
+* **Trasa 🡢 Węzły** (M:N) *Trasa* przechodzi przez *Węzły*
+* **Trasa 🡢 Przystanek** (M:N) *Trasa* przechodzi przez *Przystanki*
 * **Pojazdy 🡢 Trasy** (N:1) *Pojazdy* jadą *trasą*
 * **Linia komunikacyjna 🡢 Przystanek** (M:N) *Linia komunikacyjna* obsługuje wiele *przystanków*
 * **Linia komunikacyjna 🡢 Trasy** (1:1) *Linia komunikacyjna*  kursuje po dokładnie jednej wyznaczonej *trasie* przejazdu
@@ -108,6 +109,7 @@ erDiagram
     %% Relacje Tras i Ścieżek
     TRASY }|--|{ WEZEL : "przechodzi_przez"
     TRASY }|--|{ ODCINEK_DROGI : "sklada_sie_z"
+    TRASY }|--o{ PRZYSTANEK : "przechodzi_przez"
 
     %% Relacje Pojazdów
     POJAZD }o--|| TRASY : "jedzie_po"
