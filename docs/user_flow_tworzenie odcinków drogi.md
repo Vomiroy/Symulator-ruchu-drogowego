@@ -74,7 +74,3 @@ flowchart TD
 
     AD --> AE((Koniec)) 
 ```
-
-
-    J --> H
-    K --> A
