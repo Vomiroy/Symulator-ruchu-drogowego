@@ -197,7 +197,11 @@ Jako "użytkownik" chcę zobaczyć miejsca z wysokim prawdopodobieństwem wystę
 
 **AC15**
 
-(Do uzupełnienia)
+System analizuje natężenie ruchu na wszystkich odcinkach dróg podczas symulacji.
+Odcinki o wysokim zagęszczeniu pojazdów są wyróżniane na mapie odpowiednim kolorem.
+Użytkownik może wyświetlić przewidywany poziom korków dla wybranego przedziału czasowego.
+System aktualizuje dane o korkach w czasie rzeczywistym podczas działania symulacji.
+Użytkownik może wyświetlić statystyki średniego czasu przejazdu dla wybranych tras.
 
 ------------------------------------------------------------------------------------------------
 
@@ -208,7 +212,11 @@ ruchu jednego z lub wiecej typu lokomocji (samochody, tramwaje, pieszy, rowery, 
 
 **AC16**
 
-(Do uzupełnienia)
+Użytkownik może wskazać punkt początkowy i końcowy trasy.
+Użytkownik może wybrać typ środka transportu (samochód, tramwaj, pieszy, rower, pociąg).
+System wyznacza trasę zgodną z obowiązującymi zasadami ruchu.
+System uwzględnia aktualne warunki ruchu oraz ograniczenia infrastruktury.
+Użytkownik może porównać czas przejazdu dla różnych typów transportu.
 
 ------------------------------------------------------------------------------------------------
 
@@ -218,7 +226,11 @@ Jako "użytkownik" chcę wyznaczyć obszar terenu do zapisu, aby w przyszłości
 
 **AC17**
 
-(Do uzupełnienia)
+Użytkownik może zaznaczyć wybrany obszar mapy za pomocą narzędzia zaznaczania.
+System zapisuje wszystkie obiekty znajdujące się w zaznaczonym obszarze.
+Użytkownik może nadać nazwę zapisywanemu obszarowi.
+Zapisany obszar może zostać ponownie wczytany do projektu.
+System informuje użytkownika o poprawnym zapisaniu obszaru.
 
 ------------------------------------------------------------------------------------------------
 
@@ -228,7 +240,11 @@ Jako "użytkownik" chcę utworzyć scenariusz z możliwością zapisu parametró
 
 **AC18**
 
-(Do uzupełnienia)
+Użytkownik może utworzyć nowy scenariusz symulacji.
+System zapisuje konfigurację dróg, sygnalizacji i parametrów ruchu w scenariuszu.
+Użytkownik może przełączać się pomiędzy zapisanymi scenariuszami.
+Scenariusze mogą być uruchamiane bez konieczności ponownej konfiguracji mapy.
+Użytkownik może edytować oraz usuwać zapisane scenariusze.
 
 ------------------------------------------------------------------------------------------------
 
@@ -238,7 +254,11 @@ Jako "użytkownik" chcę konfigurować cykle sygnalizacji świetlnej na wybranyc
 
 **AC19**
 
-(Do uzupełnienia)
+Użytkownik może wybrać skrzyżowanie posiadające sygnalizację świetlną.
+Użytkownik może ustawić długość trwania świateł zielonych, żółtych i czerwonych.
+System umożliwia tworzenie wielu faz sygnalizacji.
+Pojazdy reagują na sygnalizację zgodnie z aktualnym stanem świateł.
+System prezentuje wpływ zmian sygnalizacji na płynność ruchu i długość korków.
 
 ------------------------------------------------------------------------------------------------
 
@@ -249,7 +269,11 @@ aby sprawdzić, jak ich obecność wpływa na płynność ruchu pozostałych poj
 
 **AC20**
 
-(Do uzupełnienia)
+Użytkownik może tworzyć linie komunikacyjne dla autobusów i tramwajów.
+Użytkownik może definiować przystanki na trasie przejazdu.
+Użytkownik może ustalać godziny odjazdów oraz częstotliwość kursów.
+Pojazdy transportu publicznego zatrzymują się na przystankach podczas symulacji.
+System analizuje wpływ transportu publicznego na natężenie ruchu.
 
 ------------------------------------------------------------------------------------------------
 
@@ -260,7 +284,11 @@ aby zobaczyć ich wpływ na reguralny ruch.
 
 **AC21**
 
-(Do uzupełnienia)
+Użytkownik może wybrać miejsce wystąpienia zdarzenia na mapie.
+Użytkownik może określić typ zdarzenia (np. wypadek, remont, zamknięcie pasa).
+System ogranicza ruch na wskazanym odcinku zgodnie z typem zdarzenia.
+Pojazdy podczas symulacji omijają zablokowane odcinki dróg, jeśli istnieje alternatywna trasa.
+System prezentuje wpływ zdarzenia na czas przejazdu i tworzenie się korków.
 
 ------------------------------------------------------------------------------------------------
 
@@ -271,7 +299,11 @@ aby zaobserwować, jak zmniejszona prędkość i wydłużona droga hamowania wp�
 
 **AC22**
 
-(Do uzupełnienia)
+Użytkownik może wybrać typ warunków pogodowych.
+System zmienia parametry ruchu pojazdów zgodnie z wybraną pogodą.
+Warunki pogodowe wpływają na prędkość pojazdów oraz drogę hamowania.
+System uwzględnia zmniejszoną widoczność podczas mgły.
+Użytkownik może obserwować wpływ pogody na czas podróży i poziom korków.
 
 ------------------------------------------------------------------------------------------------
 
@@ -282,7 +314,11 @@ aby zweryfikować, czy algorytmy zachowań innych uczestników ruchu poprawnie r
 
 **AC23**
 
-(Do uzupełnienia)
+Użytkownik może dodać pojazdy uprzywilejowane do symulacji.
+Pojazdy uprzywilejowane mogą ignorować wybrane zasady ruchu (np. przejazd na czerwonym świetle).
+Inne pojazdy ustępują pierwszeństwa pojazdom uprzywilejowanym.
+System symuluje użycie sygnałów świetlnych i dźwiękowych.
+Użytkownik może analizować wpływ pojazdów uprzywilejowanych na płynność ruchu.
 
 ------------------------------------------------------------------------------------------------
 
@@ -292,4 +328,9 @@ Jako "użytkownik" chcę zdefiniować przejścia dla pieszych, aby zobaczyć wza
 
 **AC24**
 
+Użytkownik może dodawać przejścia dla pieszych na wybranych odcinkach drogi.
+Użytkownik może określić, czy przejście posiada sygnalizację świetlną.
+Piesi korzystają z przejść podczas symulacji.
+Pojazdy zatrzymują się przed przejściem zgodnie z obowiązującymi zasadami ruchu.
+System umożliwia analizę wpływu przejść dla pieszych na płynność ruchu i bezpieczeństwo.
 
