@@ -9,7 +9,7 @@ Jako użytkownik chcę stworzyć odcinek drogi przez dodanie nowych węzłów lu
 * System poprawnie aktualizuje strukturę grafu, łącząc węzły tak, aby pojazdy mogły płynnie przejechać z jednego elementu na drugi.
 * System waliduje poprawność położenia (np. zapobiega nakładaniu się dróg na siebie w niedozwolony sposób).
 
-[Makieta](docs/Makiety/MakietaAI_tworzenie_odcinków_drogi.png)
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazkek 4
 
 **US2** 
 
@@ -21,6 +21,8 @@ Jako użytkownik chcę utworzyć własny element drogowy z grupy połączonych w
 * Zapisany element posiada zdefiniowane zewnętrzne węzły (punkty wlotowe i wylotowe), które umożliwiają wpinanie go w istniejącą siatkę dróg.
 * Element pojawia się w menu wyboru jako gotowy komponent do wielokrotnego użycia na mapie.
 * Wstawienie elementu z menu na mapę wiernie kopiuje całą jego wewnętrzną strukturę węzłów oraz przypisane do nich reguły ruchu.
+
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazkek 6 i 11
 
 **US3** 
 
@@ -63,6 +65,8 @@ Jako użytkownik chcę dodać regułę ruchu do odcinka drogi lub węzła, aby k
 * Przypisana reguła zmienia właściwości logiczne elementu w grafie bez generowania obiektów wizualnych na mapie.
 * Algorytmy pojazdów natychmiast odczytują nową regułę i dostosowują do niej swoje zachowanie (np. zwalniają lub zmieniają trasę).
 
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazek 7 i 9
+
 **US7** 
 
 Jako użytkownik chcę dodać znak drogowy do odcinka drogi, aby wizualnie oznaczyć i automatycznie wymusić powiązaną z nim regułę.
@@ -74,6 +78,8 @@ Jako użytkownik chcę dodać znak drogowy do odcinka drogi, aby wizualnie oznac
 * Wpływ znaku (reguła) zaczyna obowiązywać pojazdy automatycznie i natychmiast od punktu, w którym fizycznie się on rozpoczyna (od miejsca jego postawienia).
 * Znak wyświetla się poprawnie jako element graficzny na mapie.
 
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazek 8
+
 **US8** 
 
 Jako użytkownik chcę utworzyć nowy znak drogowy w bazie danych, aby móc rozszerzyć bibliotekę dostępnych znaków w aplikacji.
@@ -84,6 +90,8 @@ Jako użytkownik chcę utworzyć nowy znak drogowy w bazie danych, aby móc rozs
 * Użytkownik może przypisać do nowego znaku logiczną regułę ruchu (lub zestaw reguł), którą ten znak ma reprezentować.
 * Po zapisaniu, nowy znak pojawia się w menu wyboru i jest gotowy do umieszczenia na makiecie drogi.
 
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazek 8
+
 **US9** 
 
 Jako użytkownik chcę kontrolować sygnalizację świetlną na skrzyżowaniach (węzłach), aby móc zarządzać cyklami ruchu i przepustowością.
@@ -93,6 +101,8 @@ Jako użytkownik chcę kontrolować sygnalizację świetlną na skrzyżowaniach 
 * Użytkownik może przypisać sygnalizację świetlną do wybranego węzła, który łączy wiele odcinków dróg.
 * Użytkownik może zdefiniować fazy świateł (zielone, żółte, czerwone) oraz czas ich trwania dla poszczególnych kierunków (wlotów do węzła).
 * Pojazdy docierające do węzła odczytują aktualny stan sygnalizacji dla swojego pasa i zatrzymują się na czerwonym świetle lub płynnie przejeżdżają na zielonym.
+
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazek 8
 
 **US10** 
 
@@ -115,20 +125,23 @@ Jako użytkownik chcę stworzyć nową trasę z sekwencji połączonych węzłó
 * System waliduje ciągłość i kierunkowość połączeń, uniemożliwiając stworzenie nieprzejezdnej trasy (np. jazdy pod prąd).
 * Nowo utworzona trasa zostaje zapisana w systemie i jest gotowa do przypisania pojazdom.
 
-**US13** 
+[Makieta](Makiety/MakietaAI_Tworzenie_trasy.png)
+
+**US12** 
 
 Jako użytkownik chcę dodać przystanki oraz trasy komunikacji publicznej, aby zasymulować regularny ruch autobusów lub tramwajów.
 
-**AC13**
+**AC12**
 
 * Użytkownik może wskazać miejsce na odcinku drogi (lub torowiska), aby utworzyć tam przystanek.
 * Tworzenie trasy komunikacji publicznej pozwala na połączenie sekwencji węzłów oraz wskazanie, na których przystankach pojazd ma się zatrzymywać.
 * Pojazdy przypisane do komunikacji publicznej zatrzymują się na przystankach na określony czas (np. czas wymiany pasażerów), po czym wznawiają jazdę.
-
+  
+[Makieta](Makiety/MakietaAI_Tworzenie_lini_komunikacyjnej.png)
 
 **US13**
 
-Jako użytkownik chcę stworzyć przystanek  i przypisać go do wielu linii komunikacji publicznej, aby odzwierciedlić realne współdzielenie infrastruktury.
+Jako użytkownik chcę stworzyć przystanek i przypisać go do wielu linii komunikacji publicznej, aby odzwierciedlić realne współdzielenie infrastruktury.
 
 **AC13**
 
@@ -136,6 +149,8 @@ Jako użytkownik chcę stworzyć przystanek  i przypisać go do wielu linii komu
 * Podczas tworzenia linii komunikacji publicznej (na bazie istniejącej trasy) użytkownik wskazuje, na których przystankach pojazdy mają się zatrzymywać i zdefiniować czasy przyjazdu.
 * Ten sam przystanek może być współdzielony i obsługiwany przez wiele różnych linii komunikacji publicznej.
 * Pojazdy linii publicznej zatrzymują się na przystankach, a system generuje opóźnienia (np. wynikające z ruchu drogowego lub oczekiwania na zwolnienie współdzielonego przystanku przez inny pojazd).
+
+[Makieta](Makiety/MakietaAI_Tworzenie_lini_komunikacyjnej.png)
 
 **US14**
 
@@ -147,6 +162,8 @@ Jako użytkownik chcę dodać element blokady drogi, aby tymczasowo wyłączyć 
 * Dodanie blokady zmienia status logiczny elementu grafu na „nieprzejezdny”.
 * Pojazdy generowane w symulacji dynamicznie reagują na blokadę – jeśli to możliwe, zmieniają trasę, aby ją ominąć, a jeśli nie mają alternatywy, zatrzymują się przed zablokowanym obszarem.
 * Blokada jest wyświetlana na mapie w czytelny sposób za pomocą dedykowanej grafiki.
+
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png)
 
 **US15**
 
@@ -160,7 +177,7 @@ Jako użytkownik chcę wyznaczyć obszar ze specjalnymi warunkami środowiskowym
 * Pojazdy mogą podjąć próbę przejazdu, ale ich prędkość spada.
 * Wyznaczony obszar jest wyróżniony na mapie odpowiednią nakładką graficzną (np. błękitną dla lodu, jasnoniebieską dla zalania).
 
-**US17** 
+**US16** 
 
 Jako użytkownik chcę zmieniać globalną pogodę, aby wpłynąć na fizykę jazdy, widoczność i zachowanie pojazdów w całej symulacji.
 
@@ -183,6 +200,8 @@ Jako użytkownik chcę konfigurować intensywność ruchu dla różnych przedzia
 * Dla każdego zdefiniowanego przedziału czasowego użytkownik może za pomocą suwaków lub pól numerycznych określić osobną intensywność pojawiania się np. pojazdów lub pieszych rozpoczynających ruch z tego węzła.
 * W trakcie trwania symulacji system automatycznie śledzi upływający czas i w momencie przekroczenia granicy przedziału dynamicznie zmienia tempo automatycznego generowania obiektów z danego węzła.
 * Harmonogram intensywności w menu kontekstowym można modyfikować także w czasie rzeczywistym podczas działającej symulacji, co natychmiast wpływa na bieżący strumień ruchu.
+
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png) Obrazek 10
 
 **US18**
 
@@ -281,3 +300,5 @@ Jako użytkownik chcę wczytać pełny stan symulacji z pliku, aby wznowić zapi
 * Wczytanie pliku całkowicie zastępuje bieżący stan makiety, odtwarzając pełną infrastrukturę oraz dokładne pozycje, prędkości i trasy wszystkich pojazdów, pieszych i pociągów.
 * System przywraca dokładny czas zegara symulacji oraz aktualne fazy sygnalizacji świetlnej z momentu zapisu.
 * Po pomyślnym wczytaniu symulacja domyślnie uruchamia się w trybie **Pauzy**, pozwalając użytkownikowi na rozejrzenie się po mapie przed wznowieniem ruchu.
+
+[Makieta](Makiety/MakietaAI_Tworzenie_odcinków_drogi.png)
