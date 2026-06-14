@@ -121,6 +121,8 @@ Jako użytkownik chcę stworzyć nowy pojazd, aby zdefiniować jego parametry i 
 * Nowo stworzony pojazd pojawia się na liście gotowych agentów do umieszczenia w symulacji.
 * Użytkownik może także wczytać własny plik modelu pojazdu służący do jego reprezentacji, w przypadku jeśli tego nie zrobi zostanie mu przydzielony domyślny wygląd.
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
+
 **US11** 
 
 Jako użytkownik chcę stworzyć nową trasę z sekwencji połączonych węzłów, aby zdefiniować ścieżkę, po której mogą poruszać się pojazdy.
@@ -183,6 +185,8 @@ Jako użytkownik chcę wyznaczyć obszar ze specjalnymi warunkami środowiskowym
 * Pojazdy mogą podjąć próbę przejazdu, ale ich prędkość spada.
 * Wyznaczony obszar jest wyróżniony na mapie odpowiednią nakładką graficzną (np. błękitną dla lodu, jasnoniebieską dla zalania).
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
+
 **US16** 
 
 Jako użytkownik chcę zmieniać globalną pogodę, aby wpłynąć na fizykę jazdy, widoczność i zachowanie pojazdów w całej symulacji.
@@ -219,9 +223,11 @@ Jako użytkownik chcę, aby system automatycznie i dynamicznie wyznaczał optyma
 * Rozróżnienie sieci poruszania się: Algorytm ściśle respektuje infrastrukturę dedykowaną dla danej klasy agenta.
 * Dynamiczne przeliczanie tras: Agenci reagują na bieżące zmiany na mapie. Jeśli na ich trasie pojawi się nagła blokada lub strefa niedostępna z powodu zalania, pojazdy w najbliższym węźle automatycznie przeliczają alternatywną ścieżkę.
 * Wagi odcinków: Koszt przejścia danego odcinka drogi w algorytmie nie wynika tylko z jego fizycznej długości, ale uwzględnia również:
-    * Aktualne ograniczenia prędkości,
-    * Obecność sygnalizacji świetlnej,
-    * Narastające natężenie ruchu.
+* Aktualne ograniczenia prędkości,
+* Obecność sygnalizacji świetlnej,
+* Narastające natężenie ruchu.
+
+(Brak Makiety: Algorytm)
  
 **US19**
 
@@ -233,6 +239,8 @@ Jako użytkownik chcę widzieć zagęszczenie ruchu w postaci kolorowego gradien
 * Kolor odcinka zmienia się automatycznie w czasie rzeczywistym na podstawie bieżącej płynności i liczby stojących pojazdów.
 * Czysty zielony oznacza całkowity brak zatorów, a ciemnoczerwony – pełny paraliż drogi (korek).
 * Widok gradientu natężenia ruchu można w każdej chwili włączyć lub wyłączyć jednym kliknięciem w interfejsie.
+
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
 
 **US20** 
 
@@ -247,6 +255,8 @@ Jako użytkownik chcę kontrolować stan oraz prędkość działania całej symu
 * Na ekranie głównym wyświetlany jest aktualny, ciągły czas trwania symulacji.
 * Użytkownik ma możliwość wpisania czasu startowego symulacji gdy jest ona zatrzymana.
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
+
 **US21** 
 
 Jako użytkownik chcę zapisać zaznaczony schemat infrastruktury, aby móc wielokrotnie wykorzystywać ten sam układ sieci do różnych scenariuszy ruchu.
@@ -258,6 +268,7 @@ Jako użytkownik chcę zapisać zaznaczony schemat infrastruktury, aby móc wiel
 * Dane są zapisywane w lekkim, ustrukturyzowanym formacie (np. JSON).
 * Użytkownik może wybrać folder docelowy oraz nadać plikowi własną nazwę poprzez standardowe okno systemowe.
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
 
 **US21** 
 
@@ -270,6 +281,8 @@ Jako użytkownik chcę zaznaczyć ramką określone elementy infrastruktury, aby
 * Zapisywane są wyłącznie statyczne elementy i ich wzajemna logika, dynamiczne pojazdy wewnątrz ramki są ignorowane.
 * Zapisany w ten sposób schemat trafia na listę podręcznych szablonów użytkownika, gotowych do ponownego "wklejenia" w dowolnym miejscu na makiecie.
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
+
 **US22** 
 
 Jako użytkownik chcę wybrać zapisany schemat (blueprint) i go wstawić, aby szybko replikować złożone układy skrzyżowań i dróg.
@@ -281,6 +294,8 @@ Jako użytkownik chcę wybrać zapisany schemat (blueprint) i go wstawić, aby s
 * Użytkownik może obracać podgląd schematu i sostosować jego pozycję przed jego ostatecznym umieszczeniem na mapie.
 * Kliknięcie przycisku potwierdzenia lub klawisza "enter" myszy potwierdza, automatycznie łącząc drogi ze schematu z istniejącą już siecią, jeśli ich punkty stykowe się pokrywają.
 * Wklejona infrastruktura zachowuje całą swoją oryginalną konfigurację (przypisane znaki, reguły pierwszeństwa oraz cykle sygnalizacji świetlnej).
+
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
 
 **US23** 
 
@@ -296,6 +311,8 @@ Jako użytkownik chcę zapisać pełny stan symulacji do pliku, aby móc późni
   * Ustawienia pogody: lokalne i globalne
 * Użytkownik zapisuje plik poprzez standardowe okno systemowe, wybierając dowolną nazwę i lokalizację na dysku.
 
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
+
 **US24**
 
 Jako użytkownik chcę wczytać pełny stan symulacji z pliku, aby wznowić zapisaną wcześniej sesję wraz ze wszystkimi poruszającymi się obiektami.
@@ -306,3 +323,5 @@ Jako użytkownik chcę wczytać pełny stan symulacji z pliku, aby wznowić zapi
 * Wczytanie pliku całkowicie zastępuje bieżący stan makiety, odtwarzając pełną infrastrukturę oraz dokładne pozycje, prędkości i trasy wszystkich pojazdów, pieszych i pociągów.
 * System przywraca dokładny czas zegara symulacji oraz aktualne fazy sygnalizacji świetlnej z momentu zapisu.
 * Po pomyślnym wczytaniu symulacja domyślnie uruchamia się w trybie **Pauzy**, pozwalając użytkownikowi na rozejrzenie się po mapie przed wznowieniem ruchu.
+
+[Makieta](Makiety/MakietaAI_Uzupełnienie.png)
