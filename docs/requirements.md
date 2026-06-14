@@ -9,6 +9,8 @@ Jako użytkownik chcę stworzyć odcinek drogi przez dodanie nowych węzłów lu
 * System poprawnie aktualizuje strukturę grafu, łącząc węzły tak, aby pojazdy mogły płynnie przejechać z jednego elementu na drugi.
 * System waliduje poprawność położenia (np. zapobiega nakładaniu się dróg na siebie w niedozwolony sposób).
 
+[Makieta](docs/Makiety/MakietaAI_tworzenie_odcinków_drogi.png)
+
 **US2** 
 
 Jako użytkownik chcę utworzyć własny element drogowy z grupy połączonych węzłów, aby móc łatwo powtarzać i wstawiać złożone układy dróg.
