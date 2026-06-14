@@ -22,11 +22,11 @@ Głównym celem projektu jest dostarczenie narzędzia umożliwiającego analizę
 - Tworzenie i uruchamianie scenariuszy testowych.
 - Zapisywanie, wczytywanie oraz udostępnianie map innym użytkownikom.
 
+Projekt realizowany jest jako narzędzie wspomagające analizę i optymalizację ruchu drogowego, umożliwiające testowanie różnych konfiguracji infrastruktury oraz ocenę ich wpływu na przepustowość i bezpieczeństwo ruchu.
+
 ## Repozytorium zawiera:
 - [User Stories wraz z Acceptance Criteria](docs/requirements.md) – opis wymagań funkcjonalnych projektu.
 - [User Flows](docs/user_flows) – diagramy przepływu działań użytkownika.
 - [Model Domeny](docs/domain-model.md) – opis encji oraz relacji systemu.
 - [Makiety interfejsu użytkownika](docs/Makiety) – przykładowe widoki aplikacji.
 - [Schemat bazy danych](docs/diagram_dataBase.svg) – struktura relacyjnej bazy danych projektu.
-
-Projekt realizowany jest jako narzędzie wspomagające analizę i optymalizację ruchu drogowego, umożliwiające testowanie różnych konfiguracji infrastruktury oraz ocenę ich wpływu na przepustowość i bezpieczeństwo ruchu.
